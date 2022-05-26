@@ -1,5 +1,6 @@
 package Alerts;
 
+
 import org.junit.Test;
 
 public class Q2 {
@@ -9,5 +10,6 @@ public class Q2 {
         System.out.println("deneme");
         System.out.println("deneme");
         System.out.println("deneme");
+ 
     }
 }
