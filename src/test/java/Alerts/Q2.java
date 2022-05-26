@@ -10,5 +10,6 @@ public class Q2 {
         System.out.println("deneme");
         System.out.println("sena");
         System.out.println("sena");
+        System.out.println("deneme");
     }
 }
