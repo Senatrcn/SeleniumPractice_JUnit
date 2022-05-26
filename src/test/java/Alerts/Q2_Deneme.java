@@ -6,7 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Q2_Deneme {
+
+public class Q2_Deneme extends TestBase {
     @Test
     public void test(){
         //● https://the-internet.herokuapp.com/javascript_alerts adresine gidin.
@@ -28,6 +29,16 @@ public class Q2_Deneme {
         //tıklayın ve result mesajında isminizin görüntülendiğini doğrulayın.
         driver.findElement(By.xpath("//button[@onclick='jsPrompt()']")).click();
         Assert.assertTrue(driver.findElement(By.xpath("//p[@id='result']")).getText().contains("sena"));
+      public void dismissAlert(){
+        //● Bir metod olusturun: dismissAlert
+        driver.switchTo().alert().dismiss();
+       }
+        public void sendKeysAlert(){
+        //● Bir metod olusturun: sendKeysAlert
+        driver.switchTo().alert().sendKeys("sena");
+        driver.switchTo().alert().accept();
+        }
+
     }
 
 

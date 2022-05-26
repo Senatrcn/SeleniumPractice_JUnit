@@ -9,6 +9,7 @@ public class Q2 {
 
         System.out.println("deneme");
         System.out.println("burasi web editor'den geldi");
+        System.out.println("burasi master'dan geldi");
 
 
     }
