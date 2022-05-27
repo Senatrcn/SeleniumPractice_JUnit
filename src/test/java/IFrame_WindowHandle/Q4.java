@@ -39,8 +39,10 @@ public class Q4 extends TestBase {
 
         //5."username" ve "password" kutularina deger yazdirin
         Faker faker = new Faker();
+
         driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(faker.harryPotter().character());
         driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(faker.internet().password());
+        Thread.sleep(3000);
 
         //6."login" butonuna basin
         driver.findElement(By.id("login-button")).click();
