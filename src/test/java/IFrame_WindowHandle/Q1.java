@@ -1,4 +1,4 @@
-package IFrame;
+package IFrame_WindowHandle;
 
 import Utilities.TestBase;
 import org.junit.Assert;
